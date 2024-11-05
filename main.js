@@ -28,7 +28,14 @@ bold.addEventListener('click', ()=>{
 let show_hide = document.querySelector('#show_hide');
 show_hide.addEventListener('click', ()=>{
     p.forEach((paragrafo)=>{
-        paragrafo.style.display = 'none';
+        if(paragrafo.style.display == 'block'){
+            paragrafo.style.display = 'none'
+        }else {
+            paragrafo.style.display = 'block'
+        }
+
+        
+    
 })
 
 });
